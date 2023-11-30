@@ -1,0 +1,231 @@
+.game_app {
+    overflow: hidden;
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+}
+
+.game_app .game {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    width: 1080px;
+    height: 1920px;
+    background-image: url('../resources/game/IMG/01_Loop.png');
+    background-size: auto 100%;
+}
+
+@keyframes hero_run1{
+    from{background-position-x: 0px;}
+    to{background-position-x: -5455px;}
+}
+@keyframes hero_run2{
+    from{background-position-x: 0px;}
+    to{background-position-x: -5455px;}
+}
+@keyframes hero_benefit{
+    from{background-position-x: 0px;}
+    to{background-position-x: -5455px;}
+}
+
+@keyframes hero_collision1{
+    from{background-position-x: 0px;}
+    to{background-position-x: -5455px;}
+}
+
+@keyframes hero_collision2{
+    from{background-position-x: 0px;}
+    to{background-position-x: -5455px;}
+}
+
+
+.hero_box {
+    position: fixed;
+    left: 200px;
+    bottom: 400px;
+    z-index: 100;
+    width: 522px;
+    height: 600px;
+}
+
+.hero_box .hero {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/game/IMG/Ch_Run01.png');
+    background-size: 5455px 600px; 
+}
+
+.hero_box .hero.run1
+{
+    height: 100%; 
+    background-image: url('../resources/game/IMG/Ch_Run01.png');
+    background-size: 5425px 600px; 
+    animation: hero_run1 0.7s infinite steps(10);
+} 
+
+.hero_box .hero.run2 {
+    height: 100%;
+    background-image: url('../resources/game/IMG/Ch_Run02.png');
+    background-size: 5425px 600px; 
+    animation: hero_run2 0.7s infinite steps(10);
+}
+.hero_box .hero.benefit{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Ch_Good.png');
+    background-size: 5425px 600px; 
+    animation: hero_benefit 0.7s infinite steps(10);
+}
+.hero_box .hero.collision1{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Ch_Crash01.png');
+    background-size: 5425px 600px; 
+    animation: hero_collision1 0.7s infinite steps(10);
+}
+.hero_box .hero.collision2 {
+    height: 100%;
+    background-image: url('../resources/game/IMG/Ch_Crash02.png');
+    background-size: 5425px 600px; 
+    animation: hero_collision2 0.7s infinite steps(10);
+}
+
+.benefit_box 
+{
+    position: absolute;
+    left: 1000px;
+    bottom : 600px;
+    z-index: 90;
+    width: 355px;
+    height: 500px;
+    will-change: transform;
+    /* background-size: auto 100%; */
+    /* ... other styles ... */
+    background-size: cover;
+}
+
+.benefit_box .benefit1 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/game/IMG/Benefit01.png');
+    background-size: 355px 500px;
+}
+.benefit_box .benefit2 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/game/IMG/Benefit02.png');
+    background-size: 355px 500px;
+}
+.benefit_box .benefit3 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/game/IMG/Benefit03.png');
+    background-size: 355px 500px;
+}
+.benefit_box .benefit4 {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/game/IMG/Benefit04.png');
+    background-size: 355px 500px;
+}
+.obstacle_box 
+{
+    position: absolute;
+    left: 1000px;
+    bottom : 300px;
+    z-index: 90;
+    width: 375px;
+    height: 343px;
+    will-change: transform;
+    background-size: auto 100%;
+}
+
+.obstacle_box .stone {
+    height: 100%;
+    background-image: url('../resources/game/IMG/obstacle01.png');
+    background-size: 377px 343px;
+}
+
+.obstacle_box .stone2 {
+    height: 100%;
+    background-image: url('../resources/game/IMG/obstacle02.png');
+    background-size: 377px 343px;
+}
+
+@keyframes snow_size1 {
+    from { background-position-x: 0px; }
+    to { background-position-x: -5700px; }
+}
+
+@keyframes snow_size2 { 
+    from { background-position-x: 0px; }
+    to { background-position-x: -5700px; }
+}
+
+@keyframes snow_size3 {
+    from { background-position-x: 0px; }
+    to { background-position-x: -5700px; }
+}
+
+@keyframes snow_size4 {
+    from { background-position-x: 0px; }
+    to { background-position-x: -5700px; }
+}
+
+@keyframes snow_size5 {
+    from { background-position-x: 0px; }
+    to { background-position-x: -5700px; }
+}
+
+.snow_box {
+    position: fixed;
+    left: 200px;
+    bottom: 400px;
+    z-index: 100;
+    width: 522px;
+    height: 600px;
+    will-change: transform;
+}
+
+.snow_box .snow {
+    height: 100%;
+    width: 100%;
+    background-image: url('../resources/game/IMG/Snowball_Size1.png');
+    background-size: 5700px 600px; 
+}
+
+.snow_box .snow.size1{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Snowball_Size1.png');
+    background-size: 5700px 600px; 
+    animation: snow_size1 0.7s infinite steps(10);
+}
+.snow_box .snow.size2{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Snowball_Size2.png');
+    background-size: 5700px 600px; 
+    animation: snow_size2 0.7s infinite steps(10);
+}
+
+.snow_box .snow.size3{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Snowball_Size3.png');
+    background-size: 5700px 600px; 
+    animation: snow_size3 0.7s infinite steps(10);
+}
+
+.snow_box .snow.size4{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Snowball_Size4.png');
+    background-size: 5700px 600px; 
+    animation: snow_size4 0.7s infinite steps(10);
+}
+
+
+.snow_box .snow .size5{
+    height: 100%;
+    background-image: url('../resources/game/IMG/Snowball_Size5.png');
+    background-size: 5700px 600px; 
+    animation: snow_size5 0.7s infinite steps(10);
+}

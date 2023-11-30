@@ -1,0 +1,133 @@
+.submitNicknameButton {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.submitNicknameButton img {
+    width: 100%; /* Make the image fill the button */
+    height: 100%; /* Make the image fill the button */
+}
+.input-field {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+    resize: none;
+    overflow: auto;
+}
+
+button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Close button style */
+.close-button {
+    position: absolute;
+    top: 30px; /* Adjust as needed */
+    left: 30px; /* Adjust as needed */
+    cursor: pointer;
+    width: 88px;
+    height: 90px;
+    background-image: url('../resources/game/IMG/Btn_Close.png');
+}
+
+.scroll-bg{
+    width: 952px;
+    margin:  10% auto;
+    padding: 30px;
+    border-radius:  50px;
+}
+
+.scroll-div{
+    width: 952px;
+    height: 1850px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-radius:  50px;
+}
+
+div::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-object{
+    position: relative;
+    background-image: url('../resources/game/IMG/AddIMG_1.png');
+    width: 100%;
+    height: 4379px;
+    font-family: cursive;
+    font-size:  15px;
+    padding: 10px;
+    
+}
+
+.popupNickname {
+    position: absolute;
+    color: black;
+    font-size: 65px;
+    text-align: right;
+    width: 100%;
+    bottom: 950px; /* Adjust the top position */
+    right: 530px; /* Adjust the right position */
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+
+.npcImage{
+    position: absolute;
+    width: 568px;
+    height: 602px;
+    border: none;
+    left: 10%;
+    top: 20%;
+}
+
+@font-face {
+    font-family: 'CookieRunBlack';
+    src: url('../resources/game/Font/CookieRunBlack.otf') format('opentype');
+}
+
+.resultText {
+    position: absolute;
+    text-align: right;
+    font-family: 'CookieRunBlack';
+}
