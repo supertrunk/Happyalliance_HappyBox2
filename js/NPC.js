@@ -1,8 +1,8 @@
 const GameNPC = {
-    benefit1: '../resources/game/IMG/NPC01_1@0.5x.png',
-    benefit2: '../resources/game/IMG/NPC02@0.5x.png',
-    benefit3: '../resources/game/IMG/NPC03@0.5x.png',
-    benefit4: '../resources/game/IMG/NPC04@0.5x.png',
+    benefit1: '../resources/game/IMG/NPC01_10.5x.png',
+    benefit2: '../resources/game/IMG/NPC020.5x.png',
+    benefit3: '../resources/game/IMG/NPC030.5x.png',
+    benefit4: '../resources/game/IMG/NPC040.5x.png',
 };
 class NPC{
     constructor() {
